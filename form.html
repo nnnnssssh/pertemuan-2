@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM INPUT</title>
+    <!-- INLINE => Setiap Baris-->
+     <!-- INTERNAL => ADA DI HALAMAN/PAGE YANG SAMA DAN BERADA DI HEAD -->
+      <!-- EXTERNAL => ADA DI LUAR FILE YANG BERBEDA -->
+       <!-- FONT -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,
+        200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,
+        800;1,900&display=swap" rel="stylesheet">
+      <style>
+        .borderContent{        
+            background-color: white;
+            width: 400px;
+            padding: 20px;
+            border-radius: 25px;   
+        }
+        .titleForm{
+            text-align: center;
+            font-weight: bold;
+            background-color: blanchedalmond;
+            padding: 6px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .formContent{
+            padding: 10px;
+        }
+        .inputFrom{
+            width: 370px;
+            height: 30px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        .titleForm{
+            text-align: center;
+            text-align: bold;
+            background-color: aliceblue;
+            margin-left: 10px;
+        }
+        .dataSimpan{
+            background-color: red; 
+            margin-left: 10px;
+        }
+        .dataBatal{
+            background-color: green;
+        }
+       body{
+          font-family: 'poppins';
+       } 
+       label{
+        margin-left: 10px;
+        margin: 20px;
+       }
+       .From_area{
+            width: 370px;
+            height: 50px;
+            border-radius: 10px;
+            margin-left: 10px;
+       }
+      
+      </style>
+</head>
+<body style="background-color: brown; display:
+flex; justify-content: center; align-items: center;
+padding: 150px ;">
+    <!-- DIV adalah tag html yang berfungsi untuk mengelompokan tag html yang lain -->
+    <div class="borderContent">
+        <center><img class="img" src="img/images.jpg" alt="Images" style="widht :50%"></center> 
+        <div class="titleForm">FORM INPUT BIODATA</div>
+        <div class="formContent">
+        </div>
+         <form action="success.html">
+           <div style="margin-bottom: 10px;">
+            <label for="namaLengkap">Nama Lengkap</label><br>
+            <input type="text" class="inputFrom" id="name" name="name" name="name" placeholder="Masukan Nama Lengkap disini...">
+           </div>
+           <div style="margin-bottom: 10px;" >
+            <label for="tempatLahir">Tempat Lahir</label><br>
+            <input type="text" class="inputFrom" id="name" name="name"
+            placeholder="Masukan tempat lahir disini...">
+           </div>
+           <div style="margin-bottom: 10px;">
+            <label for="tglLahir">Tanggal Lahir</label><br>
+            <input type="date" class="inputFrom" id="tglLahir" name="tglLahir">
+           </div>
+           <div style="margin-bottom: 10px;">
+           <label for="jenisKelamin">Jenis Kelamin</label><br>
+            <input type="radio" id="lakiLaki" name="jenisKelamin"
+            value="lakiLaki"> Laki-laki
+            <input type="radio" id="perempuan" name="jenisKelamin"
+            value="perempuan"> Perempuan
+          </div>
+          <div style="margin-bottom: 10px;">
+          <label for="agama" >Agama</label><br>
+            <select class="inputFrom" name="agama" id="agama">
+                <option value="islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budha">Budha</option>
+                <option value="Katolik">Katoli</option>
+            </select>
+          </div>
+          <div style="margin-bottom: 10px;">
+          <label for="noHandphone">No Handphone</label><br>
+             <input type="number" class="inputFrom" id="noHandphone" name="noHandphone" 
+             placeholder="Masukan no hp disini...">
+          </div>
+          <div style="margin-bottom: 10px;">
+            <label for="alamat">Alamat</label><br>
+             <textarea name="alamat" id="alamat " class="From_area"
+             placeholder="Masukan alamat disini..."></textarea>
+          </div>
+            <div>
+             <button type="sumbit" class="dataSimpan">SIMPAN</button>
+              <button type="reset" class="dataBatal">BATAL</button>
+            </div>
+       </form>
+         <div>
+        </div>
+    </div>    
+</body>
+</html>
